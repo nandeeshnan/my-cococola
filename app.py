@@ -9,7 +9,7 @@ CORS(app)
 # Define the directory where the Excel files will be stored
 directory = "/mnt/persistent/excel_files"
 if not os.path.exists(directory):
-    os.makedirs(directory)  # Create the directory if it doesn't exist
+    os.makedirs(directory, exist_ok=True)  # Create the directory if it doesn't exist
 
 # Define function to get the Excel file path based on the current date
 def get_excel_file_path():
