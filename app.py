@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Define the directory where the Excel files will be stored
-directory = "/mnt/persistent/excel_files"
+directory = "/tmp/excel_files"
 if not os.path.exists(directory):
     os.makedirs(directory, exist_ok=True)  # Create the directory if it doesn't exist
 
