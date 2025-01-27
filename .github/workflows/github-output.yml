@@ -3,6 +3,6 @@ on: workflow_dispatch
 jobs:
   output-info:
     runs-on: ubuntu-latest
-    steps: 
-      -  name: info
-         run: echo "${{ toJSON{github} }}"
+    steps:
+      - name: info
+        run: echo "${{ toJSON(github) }}"
